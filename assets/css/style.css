@@ -1,0 +1,85 @@
+:root {
+    --maincolor: #7059FF;
+    --altcolor: #9656F5;
+    --maintext: #ffffff;
+    --changealt: #7059FF;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--maincolor);
+    font-weight: bold;
+}
+
+#high-score {
+    margin: 5px;
+}
+
+#new-high-score {
+    
+}
+
+#timer {
+    margin: 5px;
+}
+
+#set-timer {
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    border: 1px dotted black;
+}
+
+#card-header {
+    text-align: center;
+}
+
+#card-body {
+    text-align: center;
+}
+
+button {
+    background-color: var(--altcolor);
+    padding: 5px;
+    margin-top: 10px;
+    color: var(--maintext);
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: grab;
+    background-color: var(--changealt);
+}
+
+.hide {
+    display: none;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Header containing the current highscore and where they timer will be visable-->
+    <header>
+    <!--Highscore is contaiend here-->
+        <div id="high-score">
+            <div id="new-high-score"></div>
+        </div>
+    <!--Timer is contained here-->
+        <div id="timer">
+            <div id="set-timer"></div>
+        </div>
+    </header>
+
+    <!--WHere the quiz will take place-->
+    <main>
+        <div id="container">
+            <div id="card">
+                <div id="card-header">
+                    <h1>Coding Quiz Challenge</h1>
+                </div>
+                <div id="card-body">
+                    <p>Try to answer the following code-related questions within the time limit. keep in mind that incorrect answers will penalize your scoretime by ten seconds!</p>
+                </div>
+                <button id="start-btn" type="button">Start Quiz
+                </button>
+            </div>
+        </div>
+        <section class="quiz hide">
+            <div id="questions"></div>
+                <div id="answer1"></div>
+                <div id="answer2"></div>
+                <div id="answer3"></div>
+                <div id="answer4"></div>
+            <div id="correct"></div>
+            <div id="incorrect"></div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
