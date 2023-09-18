@@ -13,3 +13,9 @@
     line-height: 1;
     font-family: sans-serif;
   }
+
+
+
+  ul, ol {
+      list-style: none;
+  }

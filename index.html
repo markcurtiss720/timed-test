@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Header containing the current highscore and where they timer will be visable-->
+    <!--Header containing highscore button and where they timer will be visable-->
     <header>
-    <!--Highscore is contaiend here-->
+    <!--Highscore can be viewed by clicking this button-->
         <div id="high-score">
-            <div id="new-high-score"></div>
+            <button id="view-highscore">View Highscore</button>
         </div>
     <!--Timer is contained here-->
         <div id="timer">
@@ -23,7 +23,7 @@
     <!--WHere the quiz will take place-->
     <main>
         <div id="container">
-            <div id="card">
+            <div class="card">
                 <div id="card-header">
                     <h1>Coding Quiz Challenge</h1>
                 </div>
@@ -34,15 +34,46 @@
                 </button>
             </div>
         </div>
-        <section class="quiz hide">
-            <div id="questions"></div>
-                <div id="answer1"></div>
-                <div id="answer2"></div>
-                <div id="answer3"></div>
-                <div id="answer4"></div>
-            <div id="correct"></div>
-            <div id="incorrect"></div>
-        </section>
+
+        <!--Questions will be listed here and called from an js array.object-->
+        <div class="hide" id="container2">
+            <div class="card quiz">
+                <div id="questions"></div>
+                <div id="answers">
+                    <ul>
+                        <li> <button class="answer-btn" value="0" id="answer1"></button> </li>
+                        <li> <button class="answer-btn" value="1" id="answer2"></button> </li>
+                        <li> <button class="answer-btn" value="2" id="answer3"></button> </li>
+                        <li> <button class="answer-btn" value="3" id="answer4"></button> </li>
+                    </ul>
+                </div>
+                <div class="hide" id="isTrue"></div>
+            </div>
+        </div> 
+        <!--when time ends or all questions answered a score will be presented and a prompt to enter initials and score-->
+        <div class="hide" id="container3">
+            <div class="card" id="end-game">
+                <h2>All Done!</h2>
+                <p>Your final score is <span id="final-score"></span></p>
+                <p>Enter initials: <span><input placeholder="initials" id="initials"/></span>
+                <button id="submit-score">Submit</button>
+                </p>
+            </div>
+        </div>
+        <!--Highscore displayed here-->
+        <div class="hide" id="container4">
+            <div class="card" id="score-board">
+                <h2>High Scores</h2>
+                <ol id="score-list">
+
+                </ol>
+                <div id="play-again">
+                    <button 
+                    id="restart">Restart</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
