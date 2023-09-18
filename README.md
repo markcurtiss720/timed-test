@@ -9,7 +9,7 @@ A timed quiz to test ones knowledge of JavaScript.
 
 follow this link to application
 
-IMAGE
+https://markcurtiss720.github.io/timed-test/
 
 
 When application loads, click the start quiz button to start the quiz
